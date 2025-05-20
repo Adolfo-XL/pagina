@@ -163,7 +163,7 @@ function abrirPaginaMujer() {
 }
 
 function abrirPaginaInformaicon() {
-  window.location.href = "PAG/Mitos_Realidades/informaicon.html";
+  window.location.href = "PAG/Mitos_Realidades/informacion.html";
 }
 
 
