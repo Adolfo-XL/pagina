@@ -1,0 +1,137 @@
+:root {
+  --color-primario: #6553ae;
+  --color-secundario: rgba(0, 0, 0, 0.35);
+  --color-terciario: #211e2e;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body { 
+  background: var(--color-primario);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5lh;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.2lh;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.8lh;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1lh;
+}
+
+.resaltar{
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.8lh;
+}
+
+.contenido {
+  position: relative;
+  height: 64rem;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  overflow: hidden;
+}
+
+.contenido::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background-image: url('../img/chica3F.png');
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  background-position: right bottom;
+  z-index: -1;
+}
+
+.panel {
+  position: relative;
+  background-color: var(--color-secundario);
+  margin: 0 50rem 0 5rem;
+  padding: 0 5rem 2rem 6rem;
+  border-radius: 6rem;
+  z-index: 1;
+}
+
+.texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1.1lh;
+  margin: 1rem 0;
+}
+
+#miPanel{
+  width: 80%;
+  height: 90%;   
+  overflow: auto; 
+  direction: rtl;          /* cambia la dirección del texto */
+}
+#miPanel * {
+  direction: ltr;          /* corrige el texto dentro */
+}
+#miPanel::-webkit-scrollbar {
+  width: 2rem; /* ancho del scroll vertical */
+}
+#miPanel::-webkit-scrollbar-track {
+  background-color:  #4b4a52; /* fondo del track */
+  border-radius: 1rem;
+}
+#miPanel::-webkit-scrollbar-thumb {
+  background-color: var(--color-terciario); /* color del scroll */
+  border-radius: 1rem;
+}
+#miPanel::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; /* color cuando pasas el mouse */
+}
+
+.btn-con{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 0 0 0 9rem;
+}
+.btn{ /*Diseño de Botones*/
+  background-color: var(--color-terciario);
+  margin: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5lh;
+  box-shadow: 0 0 1rem #211e2e;
+  cursor: pointer;
+}
+
+button:active{ /*Diseño de Botones al precionar*/
+  transform: scale(0.9);
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #211e2e;
+}
+
+footer{
+  padding: 0.1rem;
+  color: white;
+}

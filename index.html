@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Sexosfera</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/script.js" async></script>
+
+</head>
+
+<body>
+    <header>  <!-- Inicio Contenido del Header -->
+    <h1>SEXOSFERA</h1>
+    </header>  <!-- Fin Contenido del Header -->
+    <main> <!-- Inicio del Contenido de Main -->
+        <div id="btns" class="column-btn column-btn-mostrar">
+            <div  class="cntdr-btn1">
+                <button id="pushbtn" class="btn-con" onclick="activeTodo()">Mitos y realidades</button>
+                <div id="pnl" class="panel oculto">
+                    <button class="btn op p1" onclick="abrirPaginaHombre()">Hombres</button>
+                    <button class="btn op p1" onclick="abrirPaginaMujer()">Mujeres</button>
+                    <button class="btn op p1" onclick="abrirPaginaInformaicon()">Informaicon</button>
+                </div>
+            </div>
+            
+            <div  class="cntdr-btn2">
+                <button id="pushbtn2" class="btn-con" onclick="activeTodo2()">Historia</button>
+                <div id="pnl2" class="panel oculto">
+                    <button class="btn op " onclick="abrirPaginaHdlselah()"><h3>Historia de la Sexualidad en la Humanidad</h3></button>
+                    <button class="btn op p1" onclick="abrirPaginaEnfoquesc()">Enfoques culturales</button>
+                    <button class="btn op p1" onclick="abrirPaginaActual()">Actual</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <img class="chica" style="max-width: 58rem;" src="img/chicaPF.png" alt="Logo de la pagina" />
+            <div id="pnl5" class="panel2 ocultop">
+                <h1>SOBRE NOSOTROS</h1>
+                <p>
+                    Bienvenido, viajero del deseo y del saber. Has entrado a Erosfera, 
+                    <br>donde el arte susurra secretos y el conocimiento acaricia sin miedo.
+                    <br><br>Erosfera nace de la intuición de que el cuerpo, 
+                    <br>el deseo y el arte no deben ser secretos ni tabúes, sino senderos para conocernos mejor. 
+                    <br><br>Queremos abrir un portal donde el conocimiento sea suave, 
+                    <br>la curiosidad bienvenida y la belleza una guía.
+                    <br><br>Este no es un sitio común. Es una travesía. 
+                    <br><br>Una historia interactiva donde el arte erótico y la educación sexual se abrazan sin vergüenza, 
+                    <br>con respeto, alegría y una pizca de magia.
+
+                </p>
+            </div>
+        </div>
+
+        <div id="btns2" class="column-btn column-btn-mostrar">
+
+            <div  class="cntdr-btn3">
+                <button id="pushbtn3" class="btn-con" onclick="activeTodo3()">Erotismo</button>
+                <div id="pnl3" class="panel oculto">
+                    <button class="btn op p1" onclick="abrirPaginaPintura()">Pintura</button>
+                    <button class="btn op" onclick="abrirPaginaCEEAC()"><h3>Cine Erótico: Entre el Arte y la Controversia</h3></button>
+                    <button class="btn op" onclick="abrirPaginaLEPE()"><h3>Literatura Erótica: Palabras que Excitan</h3></button>
+                </div>
+            </div>
+            
+            <div class="cntdr-btn4">
+                <button id="pushbtn4" class="btn-con" onclick="activeTodo4()">Salud</button>
+                <div id="pnl4" class="panel oculto">
+                    <button class="btn op" onclick="abrirPaginaCIHS()"><h3>Cuidados íntimos e higiene sexual.</h3></button>
+                    <button class="btn op" onclick="abrirPaginaCIHS2()"><h3>Cuidados íntimos e higiene sexual.</h3></button>
+                    <button class="btn op" onclick="abrirPaginaPPD()"><h3>PREVIENE, PROTÉGETE Y DIVIÉRTETE</h3> </button>
+                </div>
+            </div>
+
+            <div class="cntdr-btn5">
+                <button id="pushbtn5" class="btn-con" onclick="activeTodo5()">SOBRE NOSOTROS</button>
+            </div>
+        </div>
+
+        <audio id="bgMusic" loop>
+            <source src="music/fondo.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+    </main>
+</body>
+<footer> <!-- Inicio Contenido del Footer -->
+  <h2>Derechos reservados &copy; 2025</h2>
+</footer> <!-- Fin Contenido del Footer -->
+</html>

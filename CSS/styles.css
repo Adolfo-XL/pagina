@@ -1,0 +1,201 @@
+:root {
+  --color-primario: #ffffff;
+  --color-secundario: linear-gradient(to right, #01c4cc, #397fd9,#7d2be8);
+  --color-terciario: #252627;
+}
+
+html{
+  font-size: 62.5%;
+}
+body { 
+  background: var(--color-primario);
+}
+
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.1lh;
+  text-align: center;
+}
+
+header{
+  background-image: var(--color-secundario);
+  padding: 0.01rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5lh;
+}
+
+main{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.column-btn-mostrar{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.column-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 10rem;
+}
+
+
+.cntdr-btn1{
+  margin: 0 10rem;
+}
+
+.cntdr-btn2{
+  margin: 0 10rem;
+}
+
+.chica{ /* Imagen de la chica */
+  height: auto;
+  margin-top: 4.5rem;
+}
+
+.cntdr-btn3{
+  margin: 0 10rem 0 6rem;
+}
+
+.cntdr-btn4{
+  margin: 0 10rem 0 12rem;
+}
+
+.cntdr-btn5{
+  margin: 0 10rem 0 6rem;
+}
+
+.btn-con{ /*Diseño de Botones*/
+  width: 22.5rem;
+  height: 10rem;
+  padding: 2rem;
+  background: none;
+  background-image: url('../img/imgButton.png');
+  background-position:center;
+  background-size: 22.5rem 10rem;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.25lh;
+  box-shadow: 0 0 1rem #0171d3;
+  cursor: pointer;
+}
+
+.btn{ /*Diseño de Botones*/
+  padding: 1.5rem;
+  background: none;
+  background-image: url('../img/imgButton.png');
+  background-position:center;
+  background-size: 18rem 8rem;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 1rem #0171d3;
+  cursor: pointer;
+}
+
+button:active{ /*Diseño de Botones al precionar*/
+  transform: scale(0.9);
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #0171d3;
+}
+
+.panel{ /*Diseño de panel*/
+  display: flex;
+  flex-direction: column; /* Asegura que los hijos se apilen en columnas */
+  align-items: center;
+  gap: 1rem; /* Espacio entre elementos */
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  background: #52baff18;
+  box-shadow: 0 0.2rem 0.6rem rgba(65, 147, 255, 0.589);
+  padding: 1rem; /* Espacio interno del panel */
+  margin: 0 0 ; /* Espacio entre el panel y los botones */
+}
+
+.panel.activo { 
+  max-height: 50rem; /* ajusta según el contenido */
+}
+
+.op{
+  width: 18rem;
+  height: 8rem;
+  
+}
+
+.p1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2lh;
+}
+.oculto {
+  display: none;
+}
+
+
+.contenedor {
+  position: relative; /* contenedor relativo para posicionar hijos */
+  width: 28%;
+  height: 80rem;
+}
+
+.chica{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.panel2{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'Orbitron', sans-serif;;
+  text-align:justify;
+  font-size: 1.5lh;
+  padding: 2rem;
+  z-index: 1; /* superior a la imagen */
+}
+
+.ocultop{
+  display: none;
+}
+
+footer{
+  background-color: var(--color-terciario);
+  padding: 0.2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1lh;
+}

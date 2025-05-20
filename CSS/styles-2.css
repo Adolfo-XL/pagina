@@ -1,0 +1,134 @@
+:root {
+  --color-primario: #d60900;
+  --color-secundario: rgba(221, 188, 0, 0.6);
+  --color-terciario: #17c300;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body { 
+  background: var(--color-primario);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5lh;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2lh;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5lh;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1lh;
+}
+
+.resaltar{
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.8lh;
+}
+
+.contenido {
+  position: relative;
+  height: 74rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contenido::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background-image: url('../img/chica2F.png');
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  background-position: right bottom;
+  z-index: -1;
+}
+
+.panel {
+  position: relative;
+  background-color: var(--color-secundario);
+  margin: 0 30rem 0 0;
+  padding: 0 5rem 2rem 4rem;
+  border-radius: 5rem;
+  z-index: 1;
+}
+
+#miPanel{
+  width: 100%;
+  height: 90%;   
+  overflow: auto; 
+  direction: rtl;          /* cambia la dirección del texto */
+}
+#miPanel * {
+  direction: ltr;          /* corrige el texto dentro */
+}
+
+#miPanel::-webkit-scrollbar {
+  width: 2rem; /* ancho del scroll vertical */
+}
+#miPanel::-webkit-scrollbar-track {
+  background-color:  #2c332b; /* fondo del track */
+  border-radius: 1rem;
+}
+
+#miPanel::-webkit-scrollbar-thumb {
+  background-color: var(--color-terciario); /* color del scroll */
+  border-radius: 1rem;
+}
+
+#miPanel::-webkit-scrollbar-thumb:hover {
+  background-color: #0dac07; /* color cuando pasas el mouse */
+}
+
+.btn{ /*Diseño de Botones*/
+  background-color: var(--color-terciario);
+  margin-top: 2rem;
+  margin-right: 10rem;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5lh;
+  box-shadow: 0 0 1rem #17c300;
+  cursor: pointer;
+}
+
+button:active{ /*Diseño de Botones al precionar*/
+  transform: scale(0.9);
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #17c300;
+}
+
+.texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1.1lh;
+  margin: 1rem 0;
+}
+
+footer{
+  padding: 0.1rem;
+  color: white;
+}
